@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 const PATHS = {
     app: path.join(__dirname, 'app'),
@@ -15,6 +16,7 @@ const commonConfig = {
         filename: '[name].js',
     },
     plugins: [
+    	new FriendlyErrorsWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Webpack Demo!',
         }),
