@@ -20,9 +20,26 @@ exports.lintJavaScript = ({ include, exclude, options }) => ({
         exclude,
         enforce: 'pre',
         loader: 'eslint-loader',
-        options: {
-          emitWarning: true,
-        },
+        options,
+      },
+    ],
+  },
+});
+
+exports.loadCSS = ({ include, exclude } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        include,
+        exclude,
+        use: [
+          'style-loader', 
+          {
+            loader: 'css-loader',
+            options: {modules: true}
+          }
+        ],
       },
     ],
   },
