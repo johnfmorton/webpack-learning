@@ -37,8 +37,31 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
           'style-loader', 
           {
             loader: 'css-loader',
-            options: {modules: true}
-          }
+            options: {modules: true}, // probably not going to use this option so it's false
+          },
+        ],
+      },
+    ],
+  },
+});
+
+exports.loadSASS = ({ include, exclude } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/,
+        include,
+        exclude,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
         ],
       },
     ],
