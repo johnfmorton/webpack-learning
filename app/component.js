@@ -6,8 +6,7 @@ export default (text = 'Hello world') => {
   element.innerHTML = text;
   // this would add a generated class name if css modules were being used
   // element.className = styles.redButton;
-
-  element.className = 'redButton';
+  element.className = 'pure-button';
 
   return element;
 };

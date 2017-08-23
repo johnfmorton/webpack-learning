@@ -1,4 +1,6 @@
 const path = require('path');
+const glob = require('glob');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // FriedlyErrors is a personal addition not part of main course
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
@@ -33,6 +35,12 @@ const commonConfig = merge([
 const productionConfig = merge([
   parts.extractCSS({ 
     use: ['css-loader', parts.autoprefix()],
+  }),
+  parts.purifyCSS({
+    paths: glob.sync(`${PATHS.app}/**/*.js`, { nodir: true }),
+    purifyOptions: {
+      minify: true,
+    },
   }),
 ]);
 
