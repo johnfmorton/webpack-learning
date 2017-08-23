@@ -38,12 +38,19 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
         use: [
           'style-loader', 
           {
-            loader: 'css-loader',
-            options: {modules: true}, // probably not going to use this option so it's false
+            loader: 'css-loader', 
+            options: {
+              modules: false, // introduces local scope for every module, probably not going to use this option so it's false
+              importLoaders: 1,
+              sourceMap: true,
+              }, 
           },
           
           {
             loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            }
           },
         ],
       },
@@ -64,9 +71,15 @@ exports.loadSASS = ({ include, exclude } = {}) => ({
           },
           {
             loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
           },
           {
             loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
           },
         ],
       },

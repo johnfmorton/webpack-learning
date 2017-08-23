@@ -1,5 +1,4 @@
-
-
+/*@import './sass.scss';*/
 body {
   background: cornsilk;
 }
@@ -8,4 +7,3 @@ body {
   background: pink;
 }
 
-@import './sass.scss';
