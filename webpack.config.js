@@ -28,25 +28,37 @@ const commonConfig = merge([
     ],
   },
   parts.lintJavaScript({ include: PATHS.app, options: {emitWarning: true} }),
-  parts.loadCSS(),
-  parts.loadSASS(),
+  // parts.loadCSS(),
+  // parts.loadSASS(),
 ]);
 
-const productionConfig = () => merge([]);
+const productionConfig = merge([
+  parts.extractCSS({ use: 'css-loader' }),
+  // parts.loadCSS(),
+  // parts.loadSASS(),
+  // 
+]);
 
-const developmentConfig = () => merge([
+const developmentConfig = merge([
   parts.devServer({
     // Customize host/port here if needed
     host: process.env.HOST,
     port: process.env.PORT,
   }),
+  parts.loadCSS(),
+  parts.loadSASS(),
+  
 ]);
 
 
 module.exports = (env) => {
+  console.log('env', env);
   if (env === 'production') {
+    // console.log(merge(commonConfig, developmentConfig).module);
     return merge(commonConfig, productionConfig);
   }
-
-  return merge(commonConfig, developmentConfig);
+  if (env === 'development') {
+    console.log('DEBUGGING', developmentConfig.module);
+    return merge(developmentConfig, commonConfig);
+  }
 };

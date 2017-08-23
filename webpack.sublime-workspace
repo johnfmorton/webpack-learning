@@ -1,0 +1,628 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pl",
+				"plugin"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"al",
+				"allSlides"
+			],
+			[
+				"in",
+				"inProduction"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"conte",
+				"contentIsLoaded"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"ar",
+				"animationRef"
+			],
+			[
+				"animation",
+				"animationRef"
+			],
+			[
+				"if",
+				"if\tTwig : If"
+			],
+			[
+				"sc",
+				"screenId"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"get",
+				"getRandom"
+			],
+			[
+				"ge",
+				"getRandom"
+			],
+			[
+				"b",
+				"bubbles"
+			],
+			[
+				"cre",
+				"createBubbles"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"logo",
+				"logospin"
+			],
+			[
+				"scale",
+				"scaleY"
+			],
+			[
+				"cir",
+				"circles"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"te",
+				"temp-images"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"tex",
+				"text-transform"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "es",
+		"selected_items":
+		[
+			[
+				"es",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"esl",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"con",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"jso",
+				"JsPrettier: Format Code"
+			],
+			[
+				"jspr",
+				"JsPrettier: Format Code"
+			],
+			[
+				"be",
+				"HTMLBeautify"
+			],
+			[
+				"prett",
+				"JsPrettier: Format Code"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"pre",
+				"JsPrettier: Format Code"
+			],
+			[
+				"form",
+				"JsPrettier: Format Code"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"htm",
+				"HTMLBeautify"
+			],
+			[
+				"try",
+				"Text Pastry: Menu"
+			],
+			[
+				"pas",
+				"Text Pastry: Add selection"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/john/git/webpack-demo"
+	],
+	"file_history":
+	[
+		"/private/var/folders/4n/3_lnsvbn6kg86q2nq0qng84m0000gn/T/com.ulyssesapp.mac/2cd183a7484e49b08a1ab9e8d2110be0/e9f6c112eb4b4c8bad6d47263d79c304/RichText/JMX2.ulss",
+		"/Users/john/Downloads/Rapid Report.ulstyle",
+		"/Users/john/git/webpack-demo/webpack.parts.js",
+		"/Users/john/git/webpack-demo/app/index.js",
+		"/Users/john/git/webpack-demo/build/app.js",
+		"/Users/john/git/webpack-demo/package.json",
+		"/Users/john/git/webpack-demo/webpack.config.js",
+		"/Users/john/git/webpack-demo/app/main.scss",
+		"/Users/john/git/webpack-demo/app/main.css",
+		"/Users/john/git/webpack-demo/app/button.js",
+		"/Users/john/git/craft.sg.dev/config/volumes.php",
+		"/Users/john/git/craft.sg.dev/config/general.php",
+		"/Users/john/Library/Caches/Transmit/6730F893-37B9-4673-B365-F0AF0098FF32/198.199.123.36/home/forge/supergeekery.com/storage/rebrand/logo/sg-logo.svg",
+		"/Users/john/Library/Caches/Transmit/0A5F61BE-9DBB-4B0A-85FD-9BDD51CDB549/198.199.123.36/home/forge/supergeekery.com/scripts/.env.sh",
+		"/Users/john/Library/Caches/Transmit/F7B20174-BE14-4FA5-8D65-302DBD4AA777/198.199.123.36/home/forge/staging.supergeekery.com/scripts/.env.sh",
+		"/Users/john/.ssh/config",
+		"/Users/john/git/webpack-demo/.eslintrc.js",
+		"/Users/john/git/webpack-demo/package-lock.json",
+		"/Users/john/git/webpack-demo/app/component.js",
+		"/Users/john/git/webpack-demo/build/index.html",
+		"/Users/john/git/webpack-demo/index.js",
+		"/Users/john/git/craft.sg.dev/package.json",
+		"/Users/john/git/craft-picpuller-site/package.json",
+		"/Users/john/Library/Caches/Transmit/4EA574D5-71B1-4044-8695-1C5D96D04876/162.243.174.170/home/forge/staging.blc-nav.jmx2.com/scripts/.env.sh",
+		"/Users/john/Library/Caches/Transmit/85433269-2636-418D-A997-C7E411E307A8/162.243.174.170/home/forge/navigator.betsylehmancenterma.gov/scripts/.env.sh",
+		"/Users/john/Library/Caches/Transmit/EA70EBD5-4F98-4699-B678-D21B1B14276A/162.243.174.170/home/forge/staging.blc-nav.jmx2.com/scripts/.env.sh",
+		"/Users/john/git/lonawalburn-craftcms/Lona Walburn.sublime-project",
+		"/Users/john/Library/Caches/Transmit/5CC61C2C-38AA-49F8-8514-6D3271B41D66/198.199.123.36/home/forge/staging.picpuller.com/package.json",
+		"/Users/john/git/lonawalburn-craftcms/webpack.config.js",
+		"/Users/john/Desktop/verizon-pointless-chat-13AUG2017.txt",
+		"/Users/john/git/lonawalburn-craftcms/static/index.twig",
+		"/Users/john/git/lonawalburn-craftcms/craft/test/index.twig",
+		"/Users/john/git/lonawalburn-craftcms/public/dev/scripts/main.js",
+		"/Users/john/git/lonawalburn-craftcms/public/dist/index.html",
+		"/Users/john/Library/Caches/Transmit/9CA1C663-E8DB-4050-B0BE-FFEBE35F58E5/52.23.164.107/home/forge/www.betsylehmancenterma.gov/public/offline.html",
+		"/Users/john/git/betsylehmam.dev/notes-on-changes-jfm.md",
+		"/Users/john/git/lonawalburn-craftcms/purifyHTML/mobile-portpiece.html",
+		"/Users/john/git/lonawalburn-craftcms/craft/templates/_layout.twig",
+		"/Users/john/git/lonawalburn-craftcms/public/dist/bundle.css",
+		"/Users/john/git/lonawalburn-craftcms/public/dev/style/main.scss",
+		"/Users/john/git/lonawalburn-craftcms/public/styles/main.scss",
+		"/Users/john/git/lonawalburn-craftcms/public/dev/scripts/index.js",
+		"/Users/john/git/lonawalburn-craftcms/public/dist/bundle.js",
+		"/Users/john/git/lonawalburn-craftcms/package.json",
+		"/Users/john/git/lonawalburn-craftcms/public/dev/scripts/Tester.js",
+		"/Users/john/git/lonawalburn-craftcms/public/dev/scripts/vendor/jquery.mobile.custom.js",
+		"/Users/john/git/lonawalburn-craftcms/public/dev/scripts/tester.js",
+		"/Users/john/Library/Caches/Transmit/4D9459D2-2AEF-428F-B507-0E2882A27EC3/198.199.123.36/home/forge/staging.picpuller.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/4CF68764-DBBB-4BAC-B221-0FB85627EAA1/198.199.123.36/home/forge/staging.picpuller.com/craft/config/routes.php",
+		"/Users/john/Library/Caches/Transmit/2D94FDC2-D5F0-4981-A3C0-0FB34706AC44/198.199.123.36/home/forge/staging.picpuller.com/craft/config/general.php",
+		"/Users/john/Library/Caches/Transmit/CF3079A3-8F53-468A-BB24-A7DFAC117706/198.199.123.36/home/forge/staging.picpuller.com/craft/config/db.php",
+		"/Users/john/Library/Caches/Transmit/48C3DA8B-13E2-4249-8A64-AA7EBF4AA124/198.199.123.36/home/forge/staging.picpuller.com/scripts/.env.sh",
+		"/Users/john/Library/Caches/Transmit/0D03100D-0B01-460F-BA8C-8FDB9805A452/198.199.123.36/home/forge/staging.picpuller.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/8499D8F7-334C-4BEF-916E-955B37ECE626/198.199.123.36/home/forge/picpuller.com/scripts/.env.sh",
+		"/Users/john/Library/Caches/Transmit/F10D0AF6-0E41-4401-99DC-FCDEA9D07AD8/198.199.123.36/home/forge/staging.picpuller.com/scripts/.env.sh",
+		"/Users/john/git/craft.sg.dev/webpack.config.js",
+		"/Users/john/git/lonawalburn-craftcms/.gitignore",
+		"/Users/john/Dropbox/JMX2 shared files/Salesforce/2017/adbuilder-update-08AUG2017/ad-template-psds-v2-08AUG2017/README.md",
+		"/Users/john/git/pp3craft3/craft/local-plugins/picpuller/src/migrations/Install.php",
+		"/Users/john/git/ppfc3/picpuller/src/records/Authorizations.php",
+		"/Users/john/git/ppfc3/picpuller/src/services/Appmanagement.php",
+		"/Users/john/git/ppfc3/picpuller/src/fields/Imagebrowser.php",
+		"/Users/john/git/sf-ad-builder/src/components/CodeRender1.js",
+		"/Users/john/git/sf-ad-builder/src/components/CodeRender2.js",
+		"/Users/john/git/sf-ad-builder/src/admockup1.css",
+		"/Users/john/git/sf-ad-builder/src/admockup2.css",
+		"/Users/john/git/sf-ad-builder/README.md",
+		"/Users/john/Resilio Sync/JMX2-WIP/salesforce/sf-lp-1/salesforce-lp-1.sublime-project",
+		"/Users/john/Library/Caches/Transmit/D21608FD-F429-42D7-B57D-445BE375F3B8/198.199.123.36/home/forge/staging.supergeekery.com/scripts/.env.sh",
+		"/Users/john/Library/Caches/Transmit/DAC2B336-3F9B-4EAC-AF05-DCCB65C65286/198.199.123.36/home/forge/staging.picpuller.com/scripts/.env.sh",
+		"/Users/john/Library/Caches/Transmit/90E9E99F-827F-45EF-A39A-D8044A3611D0/198.199.123.36/home/forge/supergeekery.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/F90065C6-8C01-4DE4-A0C0-F6C7EF4FB76D/198.199.123.36/home/forge/staging.supergeekery.com/package.json",
+		"/Users/john/Library/Caches/Transmit/36D6C8C4-2570-4A4E-AB71-1B281E9BB80A/198.199.123.36/home/forge/supergeekery.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/A06B87A4-DCD3-49BE-9A28-559F5E4D6A63/198.199.123.36/home/forge/staging.supergeekery.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/3EC57E5D-21A6-4A35-8A68-BFFBC5687560/198.199.123.36/home/forge/supergeekery.com/.env.php",
+		"/Users/john/git/craft.sg.dev/templates/_partials/metadata.twig",
+		"/Users/john/git/sf-recruitment/src/pages/list.html",
+		"/Users/john/git/sf-recruitment/src/pages/build.html",
+		"/Users/john/git/sf-recruitment/dist/index.html",
+		"/Users/john/Resilio Sync/JMX2-WIP/salesforce/pardot-june-2017/sf-ebook-signup/gulpfile.babel.js",
+		"/Users/john/git/pp3craft3/craft/local-plugins/picpuller/src/PicPuller.php",
+		"/Users/john/git/pp3craft3/craft/local-plugins/picpuller/.craftplugin",
+		"/Users/john/git/pp3craft3/craft/composer.json",
+		"/Users/john/git/ppfc3/picpuller/src/models/Settings.php",
+		"/Users/john/git/ppfc3/picpuller/src/templates/settings.twig",
+		"/Users/john/git/craft.sg.dev/composer.json",
+		"/Users/john/git/pp3craft3/craft/local-plugins/picpuller/composer.json",
+		"/Users/john/Resilio Sync/JMX2-WIP/jmx2-site-2017/jmx2-kirby-project.sublime-project",
+		"/Users/john/git/craft.sg.dev/scripts/common/common_env.sh",
+		"/Users/john/git/craft.sg.dev/scripts/.env.sh",
+		"/Users/john/git/craft-picpuller-site/scripts/common/defaults.sh",
+		"/Users/john/Downloads/craft-scripts-master/example.gitignore",
+		"/Users/john/git/craft.sg.dev/public/static/scripts/main.js",
+		"/Users/john/git/craft.sg.dev/public/assets/scripts/main.js",
+		"/Users/john/git/craft-picpuller-site/scripts/.env.sh",
+		"/Users/john/git/nystudio107/craft/config/general.php",
+		"/Users/john/Resilio Sync/JMX2-WIP/jmx2-site-2017/license.md",
+		"/Users/john/Library/Caches/Transmit/84D20189-54B2-4581-9CEA-11084515C534/198.199.123.36/home/forge/staging.supergeekery.com/.env.php",
+		"/Users/john/git/webpack-learning/webpack.config.js",
+		"/Users/john/git/craft.sg.dev/public/dist/scripts/main.min.js",
+		"/Users/john/Downloads/highlight/README.md",
+		"/Users/john/git/craft.sg.dev/node_modules/prismjs/gulpfile.js",
+		"/Users/john/git/webpack-learning/dist/supergeekery.css",
+		"/Users/john/Desktop/Fastmail SMTP password for Netgear.txt",
+		"/Users/john/Desktop/server-logs-for-sonos.txt",
+		"/Users/john/git/webpack-learning/dist/styles.css",
+		"/Users/john/git/webpack-learning/dist/supergeekery.js",
+		"/Users/john/git/webpack-learning/src/main.scss",
+		"/Users/john/git/webpack-learning/dist/bundle.js",
+		"/Users/john/git/webpack-learning/src/main.js",
+		"/Users/john/Library/Caches/Transmit/50C05EE3-0508-4458-9016-5EC99311A376/198.199.123.36/home/forge/staging.supergeekery.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/44AD1F9C-37CE-4325-899E-5E338A949B3F/198.199.123.36/home/forge/staging.supergeekery.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/312C41C2-812D-4B2B-86E9-C6FED426F00B/198.199.123.36/home/forge/staging.supergeekery.com/config/db.php",
+		"/Users/john/Library/Caches/Transmit/48B3DBCC-E9ED-401B-92BE-ABB0C853646F/198.199.123.36/home/forge/staging.supergeekery.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/20C671A2-C341-4195-9579-4EE45385A7A7/198.199.123.36/home/forge/staging.supergeekery.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/632BB421-0108-47AA-9EED-4EF4ECCF5F1A/198.199.123.36/home/forge/staging.supergeekery.com/craft/.env.php",
+		"/Users/john/Library/Caches/Transmit/248203A2-2207-4A02-BF24-FC4DBA57AACE/198.199.123.36/home/forge/staging.picpuller.com/.env.php",
+		"/Users/john/Library/Caches/Transmit/C08AEB39-3AF9-400C-99CD-A3A3EB53951E/198.199.123.36/home/forge/staging.supergeekery.com/craft/config/db.php",
+		"/Users/john/Library/Caches/Transmit/4A0F6468-1DFE-4C32-AD27-36B7C4BBCB67/198.199.123.36/home/forge/staging.supergeekery.com/craft/config/general.php",
+		"/Users/john/Library/Caches/Transmit/47A14F37-8839-42F7-8EBC-35E30B2122B1/198.199.123.36/home/forge/staging.supergeekery.com/craft/.env.php",
+		"/Users/john/Library/Caches/Transmit/4A27F9A4-533E-447C-86B7-1D719309B74E/198.199.123.36/home/forge/staging.supergeekery.com/craft/config/general.php",
+		"/Users/john/Library/Caches/Transmit/AB37D9D9-5A62-402C-BE4E-D436B0FC2965/198.199.123.36/home/forge/staging.supergeekery.com/craft/.env.php",
+		"/Users/john/Desktop/sgstaging.env.php",
+		"/Users/john/Library/Caches/Transmit/C6E41B20-9857-4817-B23D-FD6A27C5DDED/198.199.123.36/home/forge/staging.picpuller.com/.env.php",
+		"/Users/john/git/betsy-lehman-center-reporting-navigator/debugging sendmail.txt",
+		"/Users/john/git/betsy-lehman-center-reporting-navigator/blc-nav.sublime-project",
+		"/Users/john/Desktop/CLL 18JUL2017.md",
+		"/Users/john/git/craft.sg.dev/craft/local-plugins/hacksaw/src/translations/en/hacksaw.php"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 161.0,
+		"where_history":
+		[
+			"/Users/john/git/craft.sg.dev/vendor/craftcms",
+			"/Users/john/git/betsylehmam.dev",
+			"/Users/john/Downloads/gorgo-kirby-1.0.2",
+			"/Users/john/git/lonawalburn-craftcms/public/scripts",
+			"/Users/john/git/craft-picpuller-site/craft/plugins/picpuller",
+			"/Users/john/git/pp3craft3/craft/local-plugins/picpuller",
+			"/Users/john/git/ppfc3/picpuller/src",
+			"/Users/john/git/craft.sg.dev/craft/templates",
+			"/Users/john/git/craft-picpuller-site/craft/plugins",
+			"/Users/john/git/craft-picpuller-site/craft/templates",
+			"/Users/john/git/betsy-lehman-center-reporting-navigator/templates",
+			"/Users/john/git/betsy-lehman-center-reporting-navigator/resources/assets/sass",
+			"/Users/john/git/pp3craft3/craft/vendor",
+			"/Users/john/git/pp3craft3/craft/plugins/picpuller",
+			"/Users/john/git/toddkillinger-wp/wp-content/themes/toddkillinger_responsive_v3_1/*.scss",
+			"/Users/john/git/toddkillinger-wp/wp-content/themes/toddkillinger_responsive_v3_1",
+			"PolarBear",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"() =>",
+			"developmentConfig",
+			"commonConfig",
+			"ExtractTextPlugin",
+			"gree",
+			"component",
+			"Temporary uploads",
+			"Temporary",
+			"img/uploads",
+			"assets",
+			"productionConfig",
+			"This is a slideshow with",
+			"graph",
+			"instagram",
+			"menu-toggle",
+			"menu-close",
+			"z-index:",
+			"z-index: 9",
+			"z-index: 9000",
+			"z-index",
+			"menu-toggle",
+			"z-index",
+			"CleanWebpackPlugin",
+			"glob",
+			"console",
+			"isMobile",
+			"tap",
+			"swipeleft",
+			"tap",
+			"glob",
+			"url(/images",
+			"}\n",
+			"url",
+			"url('",
+			"notebtm",
+			"('images",
+			"url",
+			"../images",
+			"'../images",
+			"swipe",
+			"hammer",
+			"Hammer",
+			"each",
+			"isMobile",
+			"hammer",
+			"hamm",
+			"hammer",
+			"console.log",
+			"isoop",
+			"scripts",
+			"bd188e2747974d03aaa3cd2c1498b4e7",
+			"saveCredentials",
+			"craftUserId",
+			"siteId",
+			"some_field",
+			"picpuller_picpullerrecord",
+			"record",
+			"box-sizing",
+			"768",
+			"staging.",
+			"/forge/picpuller.com/",
+			"picpuller",
+			"rereads",
+			"AppManagementService",
+			"instagramService",
+			"InstagramService",
+			"shortName",
+			"glob",
+			", ",
+			"earth",
+			"Terminal",
+			"someFilter",
+			"26",
+			"<div>\n                                    Each month\n                                </div>",
+			"579p",
+			"53",
+			"452px",
+			"266",
+			"banners-21",
+			"h4",
+			"h3",
+			"i ",
+			"form",
+			"user.",
+			"form",
+			"public/",
+			"craft-picpuller-site",
+			"subscribe",
+			"chimp",
+			"toolbox",
+			"1",
+			"visual",
+			"contentIsLoaded",
+			"visualIsRendered",
+			"Waiting",
+			"waiting",
+			"ReactPiwik",
+			"setWaiting",
+			"ReactPiwik",
+			"showScrollIndicator",
+			"scroll-indicator",
+			"checkScrollIndicator",
+			"offset().top",
+			"andSelf",
+			"getFootHtml",
+			"possible-reporting-req",
+			"flex",
+			"button--orange-on-orange",
+			"app",
+			"example",
+			"manage",
+			"EVENT_REGISTER_CP_URL_RULES",
+			"manage",
+			"cp",
+			"cP",
+			"cp",
+			"CP",
+			"cp",
+			"hasCpSection",
+			"control",
+			"picpullerforcraft",
+			"GLOBAL_CRAFT_PATH",
+			"LOCAL_CRAFT_FILES_PATH",
+			"REPLACE_ME",
+			"LOCAL_CRAFT_FILE_DIRS",
+			"LOCAL_CRAFT_FILES_PATH",
+			"error",
+			"form-step"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"picpuller",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 157.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webpack.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

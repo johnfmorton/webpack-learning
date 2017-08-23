@@ -1,11 +1,9 @@
-
-
-body {
+.greenButton {
+  background: green;
+}body {
   background: cornsilk;
 }
 
 .redButton {
   background: pink;
 }
-
-@import './sass.scss';
