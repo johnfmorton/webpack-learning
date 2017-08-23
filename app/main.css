@@ -1,6 +1,7 @@
 /*@import './sass.scss';*/
 body {
   background: cornsilk;
+  display: flex;
 }
 
 .redButton {

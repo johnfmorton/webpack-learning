@@ -43,14 +43,14 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
               modules: false, // introduces local scope for every module, probably not going to use this option so it's false
               importLoaders: 1,
               sourceMap: true,
-              }, 
+            }, 
           },
           
           {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
-            }
+            },
           },
         ],
       },
@@ -121,3 +121,12 @@ exports.extractCSS = ({ include, exclude, use }) => {
     plugins: [ plugin ],
   };
 };
+
+exports.autoprefix = () => ({
+  loader: 'postcss-loader',
+  options: {
+    plugins: () => ([
+      require('autoprefixer')(),
+    ]),
+  },
+});
