@@ -1,5 +1,3 @@
-const webpack = require('webpack');
-
 const path = require('path');
 const glob = require('glob');
 
@@ -40,17 +38,22 @@ const commonConfig = merge([
   parts.loadJavaScript({ include: PATHS.app }),
 ]);
 
+
+
 const productionConfig = merge([
-  {
-    entry: {
-      vendor: ['react'],
+  parts.clean(PATHS.build),
+  parts.extractBundles([
+    {
+      name: 'vendor',
+
+      minChunks: ({ resource }) => (
+        resource &&
+        resource.indexOf('node_modules') >= 0 &&
+        resource.match(/\.js$/)
+      ),
+
     },
-    plugins: [
-      new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
-      }),
-    ],
-  },
+  ]),
   parts.extractCSS({ 
     use: ['css-loader', parts.autoprefix()],
   }),
@@ -67,7 +70,12 @@ const productionConfig = merge([
     },
   }),
   parts.generateSourceMaps({ type: 'source-map' }),
+
+  parts.attachRevision(),
+
 ]);
+
+
 
 const developmentConfig = merge([
   {

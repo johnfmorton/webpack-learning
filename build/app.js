@@ -1,20 +1,18 @@
-webpackJsonp([0],{
-
-/***/ 19:
+/*! 9b18a9f */
+webpackJsonp([0],[
+/* 0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__main_css__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__main_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_scss__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__sass_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_purecss__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_purecss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_purecss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__component__ = __webpack_require__(40);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__main_css__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__main_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sass_scss__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sass_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__sass_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_purecss__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_purecss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_purecss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__component__ = __webpack_require__(5);
+// import 'react';
 
 
 
@@ -23,33 +21,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // import button from './button';
 
-document.body.appendChild(Object(__WEBPACK_IMPORTED_MODULE_4__component__["a" /* default */])());
+document.body.appendChild(Object(__WEBPACK_IMPORTED_MODULE_3__component__["a" /* default */])());
 // document.body.appendChild(button());
 
 /***/ }),
-
-/***/ 37:
+/* 1 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 38:
+/* 2 */,
+/* 3 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 39:
+/* 4 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 40:
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67,6 +62,5 @@ document.body.appendChild(Object(__WEBPACK_IMPORTED_MODULE_4__component__["a" /*
 });
 
 /***/ })
-
-},[19]);
+],[0]);
 //# sourceMappingURL=app.js.map

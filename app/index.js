@@ -1,4 +1,4 @@
-import 'react';
+// import 'react';
 
 import './main.css';
 import './sass.scss';
