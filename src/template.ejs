@@ -6,12 +6,13 @@ CSS links
 } %>
 
 JS files
-<% for (var chunk in htmlWebpackPlugin.files.chunks) { 
-  if (htmlWebpackPlugin.files.chunks[debug].entry != '') {%>
-<script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+<% for (var jsfiles in htmlWebpackPlugin.files.chunks) { 
+  if (htmlWebpackPlugin.files.chunks[jsfiles].entry != '') {%>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks[jsfiles].entry %>"></script>
 <% } 
 } %>
 
 
 
 
+t

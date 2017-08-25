@@ -1,3 +1,3 @@
-/*! 61aeca4 */
+/*! abe3a32 */
 webpackJsonp([1],{"1Q41":function(){},"2twT":function(a,b,c){"use strict";Object.defineProperty(b,"__esModule",{value:!0});var d=c("U7vG"),e=c.n(d),f=c("1Q41"),g=c.n(f),h=c("3TgK"),i=c.n(h),j=c("c5m/"),k=c.n(j),l=c("YL6N");document.body.appendChild(Object(l.a)())},"3TgK":function(){},YL6N:function(a,b){"use strict";b.a=(a="Hello world")=>{const b=document.createElement("div");return b.innerHTML=a,b.className="pure-button",b}},"c5m/":function(){}},["2twT"]);
 //# sourceMappingURL=app.275d727f.js.map
