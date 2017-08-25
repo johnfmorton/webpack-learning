@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"g",
+				"greenButton"
+			],
+			[
 				"pl",
 				"plugin"
 			],
@@ -107,6 +111,52 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "const path = require('path');\nconst glob = require('glob');\n\nconst HtmlWebpackPlugin = require('html-webpack-plugin');\n// FriedlyErrors is a personal addition not part of main course\nconst FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');\n\nconst merge = require('webpack-merge');\nconst parts = require('./webpack.parts');\n\nconst PATHS = {\n  app: path.join(__dirname, 'app'),\n  build: path.join(__dirname, 'build'),\n};\n\nconst commonConfig = merge([\n  {\n    entry: {\n      app: PATHS.app,\n    },\n    output: {\n      path: PATHS.build,\n      filename: '[name].js',\n    },\n    plugins: [\n      new FriendlyErrorsWebpackPlugin(),\n      new HtmlWebpackPlugin({\n        title: 'Webpack Demo!',\n      }),\n    ],\n  },\n  parts.lintJavaScript({ include: PATHS.app, options: {emitWarning: true} }),\n]);\n\nconst productionConfig = merge([\n  parts.extractCSS({ \n    use: ['css-loader', parts.autoprefix()],\n  }),\n  parts.purifyCSS({\n    paths: glob.sync(`${PATHS.app}/**/*.js`, { nodir: true }),\n  }),\n]);\n\nconst developmentConfig = merge([\n  parts.devServer({\n    // Customize host/port here if needed\n    host: process.env.HOST,\n    port: process.env.PORT,\n  }),\n  parts.loadCSS(),\n  parts.loadSASS(),\n  \n]);\n\n\nmodule.exports = (env) => {\n  console.log('env', env);\n  if (env === 'production') {\n    // console.log(merge(commonConfig, developmentConfig).module);\n    return merge(commonConfig, productionConfig);\n  }\n  if (env === 'development') {\n    console.log('DEBUGGING', developmentConfig.module);\n    return merge(developmentConfig, commonConfig);\n  }\n};",
+			"file": "webpack.config.js",
+			"file_size": 1619,
+			"file_write_time": 131479845680000000,
+			"settings":
+			{
+				"buffer_size": 1571,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webpack.parts.js",
+			"settings":
+			{
+				"buffer_size": 2830,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/app.js",
+			"settings":
+			{
+				"buffer_size": 4752,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/app.css",
+			"settings":
+			{
+				"buffer_size": 2574,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/sass.scss",
+			"settings":
+			{
+				"buffer_size": 96,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -224,20 +274,25 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/john/git/webpack-demo"
+		"/Users/john/git/webpack-demo",
+		"/Users/john/git/webpack-demo/app",
+		"/Users/john/git/webpack-demo/build"
 	],
 	"file_history":
 	[
+		"/Users/john/git/webpack-demo/build/app.js",
+		"/Users/john/git/webpack-demo/build/app.css",
+		"/Users/john/git/webpack-demo/webpack.parts.js",
+		"/Users/john/git/webpack-demo/app/component.js",
+		"/Users/john/git/webpack-demo/app/index.js",
+		"/Users/john/git/webpack-demo/app/main.css",
+		"/Users/john/git/webpack-demo/webpack.config.js",
+		"/Users/john/git/webpack-demo/app/sass.scss",
+		"/Users/john/git/webpack-demo/app/button.js",
+		"/Users/john/git/webpack-demo/package.json",
+		"/Users/john/git/webpack-demo/app/main.scss",
 		"/private/var/folders/4n/3_lnsvbn6kg86q2nq0qng84m0000gn/T/com.ulyssesapp.mac/2cd183a7484e49b08a1ab9e8d2110be0/e9f6c112eb4b4c8bad6d47263d79c304/RichText/JMX2.ulss",
 		"/Users/john/Downloads/Rapid Report.ulstyle",
-		"/Users/john/git/webpack-demo/webpack.parts.js",
-		"/Users/john/git/webpack-demo/app/index.js",
-		"/Users/john/git/webpack-demo/build/app.js",
-		"/Users/john/git/webpack-demo/package.json",
-		"/Users/john/git/webpack-demo/webpack.config.js",
-		"/Users/john/git/webpack-demo/app/main.scss",
-		"/Users/john/git/webpack-demo/app/main.css",
-		"/Users/john/git/webpack-demo/app/button.js",
 		"/Users/john/git/craft.sg.dev/config/volumes.php",
 		"/Users/john/git/craft.sg.dev/config/general.php",
 		"/Users/john/Library/Caches/Transmit/6730F893-37B9-4673-B365-F0AF0098FF32/198.199.123.36/home/forge/supergeekery.com/storage/rebrand/logo/sg-logo.svg",
@@ -246,7 +301,6 @@
 		"/Users/john/.ssh/config",
 		"/Users/john/git/webpack-demo/.eslintrc.js",
 		"/Users/john/git/webpack-demo/package-lock.json",
-		"/Users/john/git/webpack-demo/app/component.js",
 		"/Users/john/git/webpack-demo/build/index.html",
 		"/Users/john/git/webpack-demo/index.js",
 		"/Users/john/git/craft.sg.dev/package.json",
@@ -353,13 +407,11 @@
 		"/Users/john/Desktop/sgstaging.env.php",
 		"/Users/john/Library/Caches/Transmit/C6E41B20-9857-4817-B23D-FD6A27C5DDED/198.199.123.36/home/forge/staging.picpuller.com/.env.php",
 		"/Users/john/git/betsy-lehman-center-reporting-navigator/debugging sendmail.txt",
-		"/Users/john/git/betsy-lehman-center-reporting-navigator/blc-nav.sublime-project",
-		"/Users/john/Desktop/CLL 18JUL2017.md",
-		"/Users/john/git/craft.sg.dev/craft/local-plugins/hacksaw/src/translations/en/hacksaw.php"
+		"/Users/john/git/betsy-lehman-center-reporting-navigator/blc-nav.sublime-project"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 71.0
 	},
 	"find_in_files":
 	{
@@ -391,6 +443,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"PurifyCSSPlugin",
+			"loadSASS",
+			"';\n",
 			"() =>",
 			"developmentConfig",
 			"commonConfig",
@@ -515,10 +570,7 @@
 			"GLOBAL_CRAFT_PATH",
 			"LOCAL_CRAFT_FILES_PATH",
 			"REPLACE_ME",
-			"LOCAL_CRAFT_FILE_DIRS",
-			"LOCAL_CRAFT_FILES_PATH",
-			"error",
-			"form-step"
+			"LOCAL_CRAFT_FILE_DIRS"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -538,8 +590,162 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "webpack.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								677,
+								677
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (Webpack).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 477.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "webpack.parts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2747,
+								2747
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2557.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "build/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "build/app.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2574,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/sass.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -620,7 +826,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 180.0,
+	"side_bar_width": 227.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

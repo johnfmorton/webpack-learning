@@ -30,6 +30,11 @@ const commonConfig = merge([
     ],
   },
   parts.lintJavaScript({ include: PATHS.app, options: {emitWarning: true} }),
+  parts.loadFonts({
+    options: {
+      name: '[name].[ext]',
+    },
+  }),
 ]);
 
 const productionConfig = merge([
@@ -42,6 +47,12 @@ const productionConfig = merge([
       minify: true,
     },
   }),
+  parts.loadImages({
+    options: {
+      limit: 15000,
+      name: '[name].[ext]',
+    },
+  }),
 ]);
 
 const developmentConfig = merge([
@@ -52,7 +63,7 @@ const developmentConfig = merge([
   }),
   parts.loadCSS(),
   parts.loadSASS(),
-  
+  parts.loadImages(), 
 ]);
 
 
