@@ -2,6 +2,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const BabiliPlugin = require('babili-webpack-plugin');
 
 const webpack = require('webpack');
 
@@ -229,5 +230,11 @@ exports.attachRevision = () => ({
     new webpack.BannerPlugin({
       banner: new GitRevisionPlugin().version(),
     }),
+  ],
+});
+
+exports.minifyJavaScript = () => ({
+  plugins: [
+    new BabiliPlugin(),
   ],
 });
