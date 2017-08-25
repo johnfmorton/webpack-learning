@@ -1,3 +1,3 @@
-/*! 2b391b6 */
+/*! 5b26fc3 */
 webpackJsonp([0],{18:function(a,b,c){"use strict";Object.defineProperty(b,"__esModule",{value:!0});var d=c(19),e=c.n(d),f=c(37),g=c.n(f),h=c(39),i=c.n(h),j=c(40),k=c.n(j),l=c(41);document.body.appendChild(Object(l.a)())},37:function(){},39:function(){},40:function(){},41:function(a,b){"use strict";b.a=(a="Hello world")=>{const b=document.createElement("div");return b.innerHTML=a,b.className="pure-button",b}}},[18]);
 //# sourceMappingURL=app.js.map
