@@ -201,3 +201,8 @@ exports.loadJavaScript = ({ include, exclude }) => ({
     ],
   },
 });
+
+// https://survivejs.com/webpack/building/source-maps/
+exports.generateSourceMaps = ({ type }) => ({
+  devtool: type,
+});
