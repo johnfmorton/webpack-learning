@@ -1,0 +1,17 @@
+CSS links
+<% for (var debug in htmlWebpackPlugin.files.chunks) { 
+  if (htmlWebpackPlugin.files.chunks[debug].css != '') {%>
+<link href="<%= htmlWebpackPlugin.files.chunks[debug].css %>" rel="stylesheet">
+<% } 
+} %>
+
+JS files
+<% for (var chunk in htmlWebpackPlugin.files.chunks) { 
+  if (htmlWebpackPlugin.files.chunks[debug].entry != '') {%>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+<% } 
+} %>
+
+
+
+

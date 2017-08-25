@@ -27,7 +27,14 @@ const commonConfig = merge([
     plugins: [
       new FriendlyErrorsWebpackPlugin(),
       new HtmlWebpackPlugin({
+        // inject : false,
         title: 'Webpack Demo!',
+      }),
+      new HtmlWebpackPlugin({
+        inject : false,
+        // chunks: ['app'],
+        template : 'src/template.ejs',
+        filename: 'mytemplate.html',
       }),
     ],
   },
@@ -81,9 +88,9 @@ const productionConfig = merge([
 
     },
     {
-        name: 'manifest',
-        minChunks: Infinity,
-      },
+      name: 'manifest',
+      minChunks: Infinity,
+    },
   ]),
   parts.extractCSS({ 
     use: ['css-loader', parts.autoprefix()],
