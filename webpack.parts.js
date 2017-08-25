@@ -99,7 +99,7 @@ exports.loadSASS = ({ include, exclude } = {}) => ({
 exports.extractCSS = ({ include, exclude, use }) => {
   // Output extracted CSS to a file
   const plugin = new ExtractTextPlugin({
-    filename: '[name].css',
+    filename: '[name].[contenthash:8].css',
   });
 
   return {
@@ -251,3 +251,19 @@ exports.minifyCSS = ({ options }) => ({
     }),
   ],
 });
+
+// https://survivejs.com/webpack/optimizing/environment-variables/
+exports.setFreeVariable = (key, value) => {
+  console.log('************');
+  console.log('key', key);
+  console.log('value', value);
+  console.log('************');
+  const env = {};
+  env[key] = JSON.stringify(value);
+
+  return {
+    plugins: [
+      new webpack.DefinePlugin(env),
+    ],
+  };
+};

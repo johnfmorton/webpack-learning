@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const path = require('path');
 const glob = require('glob');
 
@@ -32,7 +34,7 @@ const commonConfig = merge([
   parts.lintJavaScript({ include: PATHS.app, options: {emitWarning: true} }),
   parts.loadFonts({
     options: {
-      name: '[name].[ext]',
+      name: '[name].[hash:8].[ext]',
     },
   }),
   parts.loadJavaScript({ include: PATHS.app }),
@@ -47,6 +49,13 @@ const productionConfig = merge([
       maxEntrypointSize: 100000, // in bytes
       maxAssetSize: 450000, // in bytes
     },
+    output: {
+      chunkFilename: '[name].[chunkhash:8].js',
+      filename: '[name].[chunkhash:8].js',
+    },
+    plugins: [
+      new webpack.HashedModuleIdsPlugin(),
+    ],
   },
   parts.clean(PATHS.build),
   parts.minifyJavaScript(),
@@ -71,6 +80,10 @@ const productionConfig = merge([
       ),
 
     },
+    {
+        name: 'manifest',
+        minChunks: Infinity,
+      },
   ]),
   parts.extractCSS({ 
     use: ['css-loader', parts.autoprefix()],
@@ -84,12 +97,23 @@ const productionConfig = merge([
   parts.loadImages({
     options: {
       limit: 15000,
-      name: '[name].[ext]',
+      name: '[name].[hash:8].[ext]',
     },
   }),
   parts.generateSourceMaps({ type: 'source-map' }),
 
   parts.attachRevision(),
+
+  // parts.setFreeVariable(
+  //   'process.env.MODE',
+  //   'testing'
+  // ),
+
+  parts.setFreeVariable(
+    'process.env.NODE_ENV',
+    'production'
+  ),
+  
 
 ]);
 
@@ -117,12 +141,13 @@ const developmentConfig = merge([
 
 module.exports = (env) => {
   console.log('env', env);
+  
   if (env === 'production') {
-    // console.log(merge(commonConfig, developmentConfig).module);
+    // console.log('Build for production', productionConfig.module);
     return merge(commonConfig, productionConfig);
   }
   if (env === 'development') {
-    console.log('DEBUGGING', developmentConfig.module);
+    // console.log('DEBUGGING', developmentConfig.module);
     return merge(developmentConfig, commonConfig);
   }
 };

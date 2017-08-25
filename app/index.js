@@ -9,3 +9,5 @@ import component from './component';
 
 document.body.appendChild(component());
 // document.body.appendChild(button());
+// 
+// console.log(process.env.MODE); // <-- this was set in the setFreeVariable method in webpack
