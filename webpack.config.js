@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const path = require('path');
 const glob = require('glob');
 
@@ -39,6 +41,16 @@ const commonConfig = merge([
 ]);
 
 const productionConfig = merge([
+  {
+    entry: {
+      vendor: ['react'],
+    },
+    plugins: [
+      new webpack.optimize.CommonsChunkPlugin({
+        name: 'vendor',
+      }),
+    ],
+  },
   parts.extractCSS({ 
     use: ['css-loader', parts.autoprefix()],
   }),

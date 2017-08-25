@@ -1,3 +1,5 @@
+import 'react';
+
 import './main.css';
 import './sass.scss';
 import 'purecss';
